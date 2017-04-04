@@ -9,7 +9,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface CSRefreshShapLayer : CAShapeLayer
-@property(nonatomic,copy)void(^startRefresh)();
 - (void)setCurrentScrollView:(UIScrollView *)currentScrollView;
+
 - (void)endRefreshing;
 @end

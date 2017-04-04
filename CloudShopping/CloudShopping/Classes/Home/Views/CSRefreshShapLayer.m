@@ -119,59 +119,59 @@ typedef enum : NSUInteger {
     //  监听父控件的滚动
     [self.currentScrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 }
-//  监听kvo方法
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
-{
-    //  获取当前滚动的偏移量
-    CGFloat contentOffSetY = self.currentScrollView.contentOffset.y;
-    //  刷新的临界点
-    CGFloat maxY = -(self.currentScrollView.contentInset.top + RFShapeLayerHeight);
-    //  判断是否是拖动
-    if (self.currentScrollView.isDragging)
-    {
-        [self updateShapeLayerPathWithContentOffsetY:contentOffSetY ];
-        //  拖动，拖动情况下只有两种状态，normal，pulling
-        if (contentOffSetY < maxY && self.type == Normal)
-        {
-            //  记录上次刷新状态
-            self.lastType = Pulling;
-            //  进入pulling状态
-            self.type = Pulling;
-        } else if (contentOffSetY >= maxY && self.type == Pulling)
-        {
-            //  记录上次刷新状态
-            self.lastType = Normal;
-            //  进入normal状态
-            self.type = Normal;
-        }
-    } else
-    {
-        [self updateShapeLayerPathWithContentOffsetY:0 ];
-        //  松手，只有上一次的刷新状态是pulling状态，才能进入refreshing状态
-        if (self.type == Pulling)
-        {
-            //  记录上次刷新状态
-            self.lastType = Refreshing;
-            //  进入正在刷新
-            self.type = Refreshing;
-        }
-    }
-}
+////  监听kvo方法
+//- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+//{
+//    //  获取当前滚动的偏移量
+//    CGFloat contentOffSetY = self.currentScrollView.contentOffset.y;
+//    //  刷新的临界点
+//    CGFloat maxY = -(self.currentScrollView.contentInset.top + RFShapeLayerHeight);
+//    //  判断是否是拖动
+//    if (self.currentScrollView.isDragging)
+//    {
+//        [self updateShapeLayerForContentOffset:contentOffSetY ];
+//        //  拖动，拖动情况下只有两种状态，normal，pulling
+//        if (contentOffSetY < maxY && self.type == Normal)
+//        {
+//            //  记录上次刷新状态
+//            self.lastType = Pulling;
+//            //  进入pulling状态
+//            self.type = Pulling;
+//        } else if (contentOffSetY >= maxY && self.type == Pulling)
+//        {
+//            //  记录上次刷新状态
+//            self.lastType = Normal;
+//            //  进入normal状态
+//            self.type = Normal;
+//        }
+//    } else
+//    {
+//        [self updateShapeLayerForContentOffset:0 ];
+//        //  松手，只有上一次的刷新状态是pulling状态，才能进入refreshing状态
+//        if (self.type == Pulling)
+//        {
+//            //  记录上次刷新状态
+//            self.lastType = Refreshing;
+//            //  进入正在刷新
+//            self.type = Refreshing;
+//        }
+//    }
+//}
 #pragma mark -- 更新shape形状和图片的位置
-- (void)updateShapeLayerPathWithContentOffsetY:(CGFloat)offsetY{
+- (void)updateShapeLayerWhenScrollView:(UIScrollView *)scrollView ChangeContentOffset:(CGFloat) offsetY {
     CGFloat topPoint = 0;
     topPoint +=offsetY *0.5;
     //设置新的控制点
-    self.controlPoint = CGPointMake([UIScreen mainScreen].bounds.size.width * 0.5, -offsetY+50);
+    CGPoint newControlPoint =  CGPointMake(scrollView.bounds.size.width * 0.5, -offsetY+50);
     //创建一个新的路径
     CGPoint startPoint = CGPointMake(0, RFShapeLayerHeight);
-    CGPoint endPoint = CGPointMake(self.currentScrollView.bounds.size.width, RFShapeLayerHeight);
-    self.path = [self creatNewShapePathWithStart:startPoint EndPoint:endPoint];
+    CGPoint endPoint = CGPointMake(scrollView.bounds.size.width, RFShapeLayerHeight);
+    self.path = [self creatNewShapePathWithStart:startPoint EndPoint:endPoint ControlPoint:newControlPoint];
     //根据滚动视图的偏移量修改图片的位置
-    [self updateAnimationImgViewPosition:CGPointMake([UIScreen mainScreen].bounds.size.width *0.5, self.controlPoint.y+topPoint) ];
+    [self updateAnimationImgViewPosition:CGPointMake(scrollView.bounds.size.width *0.5, newControlPoint.y+topPoint) ];
 }
 #pragma mark --新的shape路径
-- (CGPathRef)creatNewShapePathWithStart:(CGPoint)startPoint EndPoint:(CGPoint)endPoint{
+- (CGPathRef)creatNewShapePathWithStart:(CGPoint)startPoint EndPoint:(CGPoint)endPoint ControlPoint:(CGPoint) newControlPoint{
     //创建一个新的路径
     UIBezierPath * path = [UIBezierPath bezierPath];
     [path moveToPoint:startPoint];

@@ -39,16 +39,20 @@ typedef enum : NSUInteger {
 }
 
 -(void)willMoveToSuperview:(UIView *)newSuperview{
-
-
+    self.shapeLayer = [CSRefreshShapLayer layer];
+    self.shapeLayer.frame = self.bounds;
+    [self.layer addSublayer:self.shapeLayer];
 }
 
 - (void)add2TabHeaderView:(UIView *)tableHeaderView{
+    CGRect frame = tableHeaderView.frame;
+    self.frame = CGRectMake(0, -50, frame.size.width, 50);
      [tableHeaderView addSubview:self];
      NSAssert1([tableHeaderView.superview isKindOfClass:[UIScrollView class]], @"%@不是一个滚动视图",tableHeaderView.superview);
      self.superScrollView = (UIScrollView *)tableHeaderView.superview;
         //  监听父控件的滚动
-     [tableHeaderView.superview addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+     [self.superScrollView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+    [self.shapeLayer setCurrentScrollView:self.superScrollView];
 }
 
 #pragma mark --监听拖拽状态的改变
@@ -57,20 +61,35 @@ typedef enum : NSUInteger {
     //  根据不同的状态设置不同的视图
     switch (type) {
         case Normal: {
-
+            [self refreshStateNormalConfiguration];
             break;
         }
         case Pulling: {
-
+            [self refreshStatePullingConfiguration];
             break;
         }
         case Refreshing: {
-
+            [self refreshStateRefreshingConfiguration];
             break;
         }
     }
 }
+//正常状态
+- (void)refreshStateNormalConfiguration{
 
+}
+//下拉状态
+- (void)refreshStatePullingConfiguration{
+    
+}
+//刷新状态
+- (void)refreshStateRefreshingConfiguration{
+    
+}
+//结束刷新
+-  (void)endRefreshing{
+    [self.shapeLayer endRefreshing];
+}
 //  监听kvo方法
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
 {
