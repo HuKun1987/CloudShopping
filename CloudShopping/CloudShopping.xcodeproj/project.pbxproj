@@ -1,0 +1,982 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		777BDAAC1E910BC0002D0999 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAAB1E910BC0002D0999 /* main.m */; };
+		777BDAAF1E910BC0002D0999 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAAE1E910BC0002D0999 /* AppDelegate.m */; };
+		777BDAB21E910BC0002D0999 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAB11E910BC0002D0999 /* ViewController.m */; };
+		777BDAB51E910BC0002D0999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777BDAB31E910BC0002D0999 /* Main.storyboard */; };
+		777BDAB81E910BC0002D0999 /* CloudShopping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAB61E910BC0002D0999 /* CloudShopping.xcdatamodeld */; };
+		777BDABA1E910BC0002D0999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777BDAB91E910BC0002D0999 /* Assets.xcassets */; };
+		777BDABD1E910BC0002D0999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 777BDABB1E910BC0002D0999 /* LaunchScreen.storyboard */; };
+		777BDAC81E910BC0002D0999 /* CloudShoppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAC71E910BC0002D0999 /* CloudShoppingTests.m */; };
+		777BDAF51E913370002D0999 /* CSRootTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAF41E913370002D0999 /* CSRootTabBarController.m */; };
+		777BDAF91E9134F8002D0999 /* CSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAF81E9134F8002D0999 /* CSBaseNavigationController.m */; };
+		777BDAFC1E913778002D0999 /* CSHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAFB1E913778002D0999 /* CSHomeViewController.m */; };
+		777BDAFF1E91379C002D0999 /* CSLatestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDAFE1E91379C002D0999 /* CSLatestViewController.m */; };
+		777BDB021E9137F6002D0999 /* CSProductsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB011E9137F6002D0999 /* CSProductsController.m */; };
+		777BDB051E91384E002D0999 /* CSShopCartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB041E91384E002D0999 /* CSShopCartController.m */; };
+		777BDB081E913868002D0999 /* CSMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB071E913868002D0999 /* CSMineViewController.m */; };
+		777BDB0C1E91496C002D0999 /* CSPCatergoryListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB0B1E91496C002D0999 /* CSPCatergoryListView.m */; };
+		777BDB0F1E9149BF002D0999 /* CSPDetailListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB0E1E9149BF002D0999 /* CSPDetailListView.m */; };
+		777BDB121E914A39002D0999 /* CSPToolBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB111E914A39002D0999 /* CSPToolBarView.m */; };
+		777BDB151E91BA26002D0999 /* CSPDlistLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB141E91BA26002D0999 /* CSPDlistLayout.m */; };
+		777BDB181E91BA3F002D0999 /* CSPDdetailLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB171E91BA3F002D0999 /* CSPDdetailLayout.m */; };
+		777BDB1C1E91CF2B002D0999 /* CSPcatagoryList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 777BDB1B1E91CF2B002D0999 /* CSPcatagoryList.plist */; };
+		777BDB1F1E91E580002D0999 /* CSPCsingleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB1E1E91E580002D0999 /* CSPCsingleCell.m */; };
+		777BDB221E91E5FB002D0999 /* CSPCIconViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB211E91E5FB002D0999 /* CSPCIconViewCell.m */; };
+		777BDB251E91E6D8002D0999 /* CSPProductType.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB241E91E6D8002D0999 /* CSPProductType.m */; };
+		777BDB281E921C2C002D0999 /* CSPDlistCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB271E921C2C002D0999 /* CSPDlistCollectionCell.m */; };
+		777BDB2B1E921C9A002D0999 /* CSPDdetailCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB2A1E921C9A002D0999 /* CSPDdetailCollectionCell.m */; };
+		777BDB2D1E921CFA002D0999 /* CSPDlistCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 777BDB2C1E921CFA002D0999 /* CSPDlistCollectionCell.xib */; };
+		777BDB2F1E92256D002D0999 /* CSPDdetailCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 777BDB2E1E92256D002D0999 /* CSPDdetailCollectionCell.xib */; };
+		777BDB381E9238C0002D0999 /* DownPullRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB321E9238C0002D0999 /* DownPullRefreshControl.m */; };
+		777BDB391E9238C0002D0999 /* PullUpLoadControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB351E9238C0002D0999 /* PullUpLoadControl.m */; };
+		777BDB3A1E9238C0002D0999 /* UITableView+RefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB371E9238C0002D0999 /* UITableView+RefreshControl.m */; };
+		777BDB3D1E928BFC002D0999 /* CSHomeTabHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB3C1E928BFB002D0999 /* CSHomeTabHeader.m */; };
+		777BDB401E9312CA002D0999 /* CSRefreshShapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB3F1E9312CA002D0999 /* CSRefreshShapLayer.m */; };
+		777BDB431E93C899002D0999 /* CSShapeHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BDB421E93C899002D0999 /* CSShapeHeaderRefresh.m */; };
+		9F91CA1684447BC6433AF2B8 /* libPods-CloudShopping.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0B806D9A40F5C11EE26DB9 /* libPods-CloudShopping.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		777BDAC41E910BC0002D0999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 777BDA9F1E910BC0002D0999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 777BDAA61E910BC0002D0999;
+			remoteInfo = CloudShopping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04CBC6ED00AEC88A4B8ACE5E /* Pods-CloudShopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudShopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudShopping/Pods-CloudShopping.release.xcconfig"; sourceTree = "<group>"; };
+		3B0B806D9A40F5C11EE26DB9 /* libPods-CloudShopping.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudShopping.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		777BDAA71E910BC0002D0999 /* CloudShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		777BDAAB1E910BC0002D0999 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		777BDAAD1E910BC0002D0999 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		777BDAAE1E910BC0002D0999 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		777BDAB01E910BC0002D0999 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		777BDAB11E910BC0002D0999 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		777BDAB41E910BC0002D0999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		777BDAB71E910BC0002D0999 /* CloudShopping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudShopping.xcdatamodel; sourceTree = "<group>"; };
+		777BDAB91E910BC0002D0999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		777BDABC1E910BC0002D0999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		777BDABE1E910BC0002D0999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		777BDAC31E910BC0002D0999 /* CloudShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		777BDAC71E910BC0002D0999 /* CloudShoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CloudShoppingTests.m; sourceTree = "<group>"; };
+		777BDAC91E910BC0002D0999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		777BDAF31E913370002D0999 /* CSRootTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRootTabBarController.h; sourceTree = "<group>"; };
+		777BDAF41E913370002D0999 /* CSRootTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRootTabBarController.m; sourceTree = "<group>"; };
+		777BDAF71E9134F8002D0999 /* CSBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBaseNavigationController.h; sourceTree = "<group>"; };
+		777BDAF81E9134F8002D0999 /* CSBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBaseNavigationController.m; sourceTree = "<group>"; };
+		777BDAFA1E913778002D0999 /* CSHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHomeViewController.h; sourceTree = "<group>"; };
+		777BDAFB1E913778002D0999 /* CSHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHomeViewController.m; sourceTree = "<group>"; };
+		777BDAFD1E91379C002D0999 /* CSLatestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSLatestViewController.h; sourceTree = "<group>"; };
+		777BDAFE1E91379C002D0999 /* CSLatestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSLatestViewController.m; sourceTree = "<group>"; };
+		777BDB001E9137F6002D0999 /* CSProductsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSProductsController.h; sourceTree = "<group>"; };
+		777BDB011E9137F6002D0999 /* CSProductsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSProductsController.m; sourceTree = "<group>"; };
+		777BDB031E91384E002D0999 /* CSShopCartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSShopCartController.h; sourceTree = "<group>"; };
+		777BDB041E91384E002D0999 /* CSShopCartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSShopCartController.m; sourceTree = "<group>"; };
+		777BDB061E913868002D0999 /* CSMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSMineViewController.h; sourceTree = "<group>"; };
+		777BDB071E913868002D0999 /* CSMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSMineViewController.m; sourceTree = "<group>"; };
+		777BDB091E913C5A002D0999 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		777BDB0A1E91496C002D0999 /* CSPCatergoryListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPCatergoryListView.h; sourceTree = "<group>"; };
+		777BDB0B1E91496C002D0999 /* CSPCatergoryListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPCatergoryListView.m; sourceTree = "<group>"; };
+		777BDB0D1E9149BF002D0999 /* CSPDetailListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPDetailListView.h; sourceTree = "<group>"; };
+		777BDB0E1E9149BF002D0999 /* CSPDetailListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPDetailListView.m; sourceTree = "<group>"; };
+		777BDB101E914A39002D0999 /* CSPToolBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPToolBarView.h; sourceTree = "<group>"; };
+		777BDB111E914A39002D0999 /* CSPToolBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPToolBarView.m; sourceTree = "<group>"; };
+		777BDB131E91BA26002D0999 /* CSPDlistLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPDlistLayout.h; sourceTree = "<group>"; };
+		777BDB141E91BA26002D0999 /* CSPDlistLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPDlistLayout.m; sourceTree = "<group>"; };
+		777BDB161E91BA3F002D0999 /* CSPDdetailLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPDdetailLayout.h; sourceTree = "<group>"; };
+		777BDB171E91BA3F002D0999 /* CSPDdetailLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPDdetailLayout.m; sourceTree = "<group>"; };
+		777BDB1B1E91CF2B002D0999 /* CSPcatagoryList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CSPcatagoryList.plist; sourceTree = "<group>"; };
+		777BDB1D1E91E580002D0999 /* CSPCsingleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPCsingleCell.h; sourceTree = "<group>"; };
+		777BDB1E1E91E580002D0999 /* CSPCsingleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPCsingleCell.m; sourceTree = "<group>"; };
+		777BDB201E91E5FB002D0999 /* CSPCIconViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPCIconViewCell.h; sourceTree = "<group>"; };
+		777BDB211E91E5FB002D0999 /* CSPCIconViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPCIconViewCell.m; sourceTree = "<group>"; };
+		777BDB231E91E6D8002D0999 /* CSPProductType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPProductType.h; sourceTree = "<group>"; };
+		777BDB241E91E6D8002D0999 /* CSPProductType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPProductType.m; sourceTree = "<group>"; };
+		777BDB261E921C2C002D0999 /* CSPDlistCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPDlistCollectionCell.h; sourceTree = "<group>"; };
+		777BDB271E921C2C002D0999 /* CSPDlistCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPDlistCollectionCell.m; sourceTree = "<group>"; };
+		777BDB291E921C9A002D0999 /* CSPDdetailCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPDdetailCollectionCell.h; sourceTree = "<group>"; };
+		777BDB2A1E921C9A002D0999 /* CSPDdetailCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPDdetailCollectionCell.m; sourceTree = "<group>"; };
+		777BDB2C1E921CFA002D0999 /* CSPDlistCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSPDlistCollectionCell.xib; sourceTree = "<group>"; };
+		777BDB2E1E92256D002D0999 /* CSPDdetailCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSPDdetailCollectionCell.xib; sourceTree = "<group>"; };
+		777BDB311E9238C0002D0999 /* DownPullRefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownPullRefreshControl.h; sourceTree = "<group>"; };
+		777BDB321E9238C0002D0999 /* DownPullRefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownPullRefreshControl.m; sourceTree = "<group>"; };
+		777BDB331E9238C0002D0999 /* HMRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMRefresh.h; sourceTree = "<group>"; };
+		777BDB341E9238C0002D0999 /* PullUpLoadControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullUpLoadControl.h; sourceTree = "<group>"; };
+		777BDB351E9238C0002D0999 /* PullUpLoadControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullUpLoadControl.m; sourceTree = "<group>"; };
+		777BDB361E9238C0002D0999 /* UITableView+RefreshControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RefreshControl.h"; sourceTree = "<group>"; };
+		777BDB371E9238C0002D0999 /* UITableView+RefreshControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RefreshControl.m"; sourceTree = "<group>"; };
+		777BDB3B1E928BFB002D0999 /* CSHomeTabHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSHomeTabHeader.h; sourceTree = "<group>"; };
+		777BDB3C1E928BFB002D0999 /* CSHomeTabHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSHomeTabHeader.m; sourceTree = "<group>"; };
+		777BDB3E1E9312CA002D0999 /* CSRefreshShapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSRefreshShapLayer.h; sourceTree = "<group>"; };
+		777BDB3F1E9312CA002D0999 /* CSRefreshShapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSRefreshShapLayer.m; sourceTree = "<group>"; };
+		777BDB411E93C899002D0999 /* CSShapeHeaderRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSShapeHeaderRefresh.h; sourceTree = "<group>"; };
+		777BDB421E93C899002D0999 /* CSShapeHeaderRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSShapeHeaderRefresh.m; sourceTree = "<group>"; };
+		7A6B11C50EE324FEBC430D0D /* Pods-CloudShopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudShopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudShopping/Pods-CloudShopping.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		777BDAA41E910BC0002D0999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F91CA1684447BC6433AF2B8 /* libPods-CloudShopping.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777BDAC01E910BC0002D0999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5C9223A97F2536AB9A5C688F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A6B11C50EE324FEBC430D0D /* Pods-CloudShopping.debug.xcconfig */,
+				04CBC6ED00AEC88A4B8ACE5E /* Pods-CloudShopping.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		777BDA9E1E910BC0002D0999 = {
+			isa = PBXGroup;
+			children = (
+				777BDAA91E910BC0002D0999 /* CloudShopping */,
+				777BDAC61E910BC0002D0999 /* CloudShoppingTests */,
+				777BDAA81E910BC0002D0999 /* Products */,
+				5C9223A97F2536AB9A5C688F /* Pods */,
+				A1E9F44C907856AF1B410A40 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		777BDAA81E910BC0002D0999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAA71E910BC0002D0999 /* CloudShopping.app */,
+				777BDAC31E910BC0002D0999 /* CloudShoppingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		777BDAA91E910BC0002D0999 /* CloudShopping */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB191E91CEE5002D0999 /* Resource */,
+				777BDAEE1E9113F0002D0999 /* Tool */,
+				777BDAED1E9113E4002D0999 /* Catagary */,
+				777BDAEC1E9113D3002D0999 /* Others */,
+				777BDAEB1E9113CC002D0999 /* Lib */,
+				777BDAD21E911389002D0999 /* Classes */,
+				777BDAAD1E910BC0002D0999 /* AppDelegate.h */,
+				777BDAAE1E910BC0002D0999 /* AppDelegate.m */,
+				777BDAB01E910BC0002D0999 /* ViewController.h */,
+				777BDAB11E910BC0002D0999 /* ViewController.m */,
+				777BDAB31E910BC0002D0999 /* Main.storyboard */,
+				777BDAB91E910BC0002D0999 /* Assets.xcassets */,
+				777BDABB1E910BC0002D0999 /* LaunchScreen.storyboard */,
+				777BDABE1E910BC0002D0999 /* Info.plist */,
+				777BDAB61E910BC0002D0999 /* CloudShopping.xcdatamodeld */,
+				777BDAAA1E910BC0002D0999 /* Supporting Files */,
+			);
+			path = CloudShopping;
+			sourceTree = "<group>";
+		};
+		777BDAAA1E910BC0002D0999 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAAB1E910BC0002D0999 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		777BDAC61E910BC0002D0999 /* CloudShoppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAC71E910BC0002D0999 /* CloudShoppingTests.m */,
+				777BDAC91E910BC0002D0999 /* Info.plist */,
+			);
+			path = CloudShoppingTests;
+			sourceTree = "<group>";
+		};
+		777BDAD21E911389002D0999 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAEF1E913324002D0999 /* Main */,
+				777BDADB1E911389002D0999 /* LoginAndRegister */,
+				777BDAD31E911389002D0999 /* Home */,
+				777BDAE31E911389002D0999 /* Products */,
+				777BDAD71E911389002D0999 /* Latest */,
+				777BDAE71E911389002D0999 /* ShopingCart */,
+				777BDADF1E911389002D0999 /* Mine */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		777BDAD31E911389002D0999 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAD41E911389002D0999 /* Controllers */,
+				777BDAD51E911389002D0999 /* Models */,
+				777BDAD61E911389002D0999 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		777BDAD41E911389002D0999 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAFA1E913778002D0999 /* CSHomeViewController.h */,
+				777BDAFB1E913778002D0999 /* CSHomeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		777BDAD51E911389002D0999 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777BDAD61E911389002D0999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB3B1E928BFB002D0999 /* CSHomeTabHeader.h */,
+				777BDB3C1E928BFB002D0999 /* CSHomeTabHeader.m */,
+				777BDB3E1E9312CA002D0999 /* CSRefreshShapLayer.h */,
+				777BDB3F1E9312CA002D0999 /* CSRefreshShapLayer.m */,
+				777BDB411E93C899002D0999 /* CSShapeHeaderRefresh.h */,
+				777BDB421E93C899002D0999 /* CSShapeHeaderRefresh.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777BDAD71E911389002D0999 /* Latest */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAD81E911389002D0999 /* Controllers */,
+				777BDAD91E911389002D0999 /* Models */,
+				777BDADA1E911389002D0999 /* Views */,
+			);
+			path = Latest;
+			sourceTree = "<group>";
+		};
+		777BDAD81E911389002D0999 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAFD1E91379C002D0999 /* CSLatestViewController.h */,
+				777BDAFE1E91379C002D0999 /* CSLatestViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		777BDAD91E911389002D0999 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777BDADA1E911389002D0999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777BDADB1E911389002D0999 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				777BDADC1E911389002D0999 /* Controllers */,
+				777BDADD1E911389002D0999 /* Models */,
+				777BDADE1E911389002D0999 /* Views */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		777BDADC1E911389002D0999 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		777BDADD1E911389002D0999 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777BDADE1E911389002D0999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777BDADF1E911389002D0999 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAE01E911389002D0999 /* Controllers */,
+				777BDAE11E911389002D0999 /* Models */,
+				777BDAE21E911389002D0999 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		777BDAE01E911389002D0999 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB061E913868002D0999 /* CSMineViewController.h */,
+				777BDB071E913868002D0999 /* CSMineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		777BDAE11E911389002D0999 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777BDAE21E911389002D0999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777BDAE31E911389002D0999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAE41E911389002D0999 /* Controllers */,
+				777BDAE51E911389002D0999 /* Models */,
+				777BDAE61E911389002D0999 /* Views */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		777BDAE41E911389002D0999 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB001E9137F6002D0999 /* CSProductsController.h */,
+				777BDB011E9137F6002D0999 /* CSProductsController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		777BDAE51E911389002D0999 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB231E91E6D8002D0999 /* CSPProductType.h */,
+				777BDB241E91E6D8002D0999 /* CSPProductType.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777BDAE61E911389002D0999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB0A1E91496C002D0999 /* CSPCatergoryListView.h */,
+				777BDB0B1E91496C002D0999 /* CSPCatergoryListView.m */,
+				777BDB0D1E9149BF002D0999 /* CSPDetailListView.h */,
+				777BDB0E1E9149BF002D0999 /* CSPDetailListView.m */,
+				777BDB101E914A39002D0999 /* CSPToolBarView.h */,
+				777BDB111E914A39002D0999 /* CSPToolBarView.m */,
+				777BDB131E91BA26002D0999 /* CSPDlistLayout.h */,
+				777BDB141E91BA26002D0999 /* CSPDlistLayout.m */,
+				777BDB161E91BA3F002D0999 /* CSPDdetailLayout.h */,
+				777BDB171E91BA3F002D0999 /* CSPDdetailLayout.m */,
+				777BDB1D1E91E580002D0999 /* CSPCsingleCell.h */,
+				777BDB1E1E91E580002D0999 /* CSPCsingleCell.m */,
+				777BDB201E91E5FB002D0999 /* CSPCIconViewCell.h */,
+				777BDB211E91E5FB002D0999 /* CSPCIconViewCell.m */,
+				777BDB261E921C2C002D0999 /* CSPDlistCollectionCell.h */,
+				777BDB271E921C2C002D0999 /* CSPDlistCollectionCell.m */,
+				777BDB2C1E921CFA002D0999 /* CSPDlistCollectionCell.xib */,
+				777BDB291E921C9A002D0999 /* CSPDdetailCollectionCell.h */,
+				777BDB2A1E921C9A002D0999 /* CSPDdetailCollectionCell.m */,
+				777BDB2E1E92256D002D0999 /* CSPDdetailCollectionCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777BDAE71E911389002D0999 /* ShopingCart */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAE81E911389002D0999 /* Controllers */,
+				777BDAE91E911389002D0999 /* Models */,
+				777BDAEA1E911389002D0999 /* Views */,
+			);
+			path = ShopingCart;
+			sourceTree = "<group>";
+		};
+		777BDAE81E911389002D0999 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB031E91384E002D0999 /* CSShopCartController.h */,
+				777BDB041E91384E002D0999 /* CSShopCartController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		777BDAE91E911389002D0999 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777BDAEA1E911389002D0999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777BDAEB1E9113CC002D0999 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB301E9238C0002D0999 /* HMRefresh */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		777BDAEC1E9113D3002D0999 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB091E913C5A002D0999 /* PrefixHeader.pch */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		777BDAED1E9113E4002D0999 /* Catagary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Catagary;
+			sourceTree = "<group>";
+		};
+		777BDAEE1E9113F0002D0999 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		777BDAEF1E913324002D0999 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAF61E9134C7002D0999 /* Base */,
+				777BDAF01E913324002D0999 /* Controllers */,
+				777BDAF11E913324002D0999 /* Models */,
+				777BDAF21E913324002D0999 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		777BDAF01E913324002D0999 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAF31E913370002D0999 /* CSRootTabBarController.h */,
+				777BDAF41E913370002D0999 /* CSRootTabBarController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		777BDAF11E913324002D0999 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		777BDAF21E913324002D0999 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		777BDAF61E9134C7002D0999 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				777BDAF71E9134F8002D0999 /* CSBaseNavigationController.h */,
+				777BDAF81E9134F8002D0999 /* CSBaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		777BDB191E91CEE5002D0999 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB1A1E91CEE5002D0999 /* plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		777BDB1A1E91CEE5002D0999 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB1B1E91CF2B002D0999 /* CSPcatagoryList.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		777BDB301E9238C0002D0999 /* HMRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				777BDB311E9238C0002D0999 /* DownPullRefreshControl.h */,
+				777BDB321E9238C0002D0999 /* DownPullRefreshControl.m */,
+				777BDB331E9238C0002D0999 /* HMRefresh.h */,
+				777BDB341E9238C0002D0999 /* PullUpLoadControl.h */,
+				777BDB351E9238C0002D0999 /* PullUpLoadControl.m */,
+				777BDB361E9238C0002D0999 /* UITableView+RefreshControl.h */,
+				777BDB371E9238C0002D0999 /* UITableView+RefreshControl.m */,
+			);
+			path = HMRefresh;
+			sourceTree = "<group>";
+		};
+		A1E9F44C907856AF1B410A40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B0B806D9A40F5C11EE26DB9 /* libPods-CloudShopping.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		777BDAA61E910BC0002D0999 /* CloudShopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 777BDACC1E910BC0002D0999 /* Build configuration list for PBXNativeTarget "CloudShopping" */;
+			buildPhases = (
+				DDC4C1A7554821F11C53EC3F /* [CP] Check Pods Manifest.lock */,
+				777BDAA31E910BC0002D0999 /* Sources */,
+				777BDAA41E910BC0002D0999 /* Frameworks */,
+				777BDAA51E910BC0002D0999 /* Resources */,
+				E910464A160D3E371E2FC02D /* [CP] Embed Pods Frameworks */,
+				41BC827669AACEAC1CD118D5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudShopping;
+			productName = CloudShopping;
+			productReference = 777BDAA71E910BC0002D0999 /* CloudShopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		777BDAC21E910BC0002D0999 /* CloudShoppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 777BDACF1E910BC0002D0999 /* Build configuration list for PBXNativeTarget "CloudShoppingTests" */;
+			buildPhases = (
+				777BDABF1E910BC0002D0999 /* Sources */,
+				777BDAC01E910BC0002D0999 /* Frameworks */,
+				777BDAC11E910BC0002D0999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				777BDAC51E910BC0002D0999 /* PBXTargetDependency */,
+			);
+			name = CloudShoppingTests;
+			productName = CloudShoppingTests;
+			productReference = 777BDAC31E910BC0002D0999 /* CloudShoppingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		777BDA9F1E910BC0002D0999 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CS;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = hukun;
+				TargetAttributes = {
+					777BDAA61E910BC0002D0999 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AZT38BP2GZ;
+						ProvisioningStyle = Automatic;
+					};
+					777BDAC21E910BC0002D0999 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = AZT38BP2GZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 777BDAA61E910BC0002D0999;
+					};
+				};
+			};
+			buildConfigurationList = 777BDAA21E910BC0002D0999 /* Build configuration list for PBXProject "CloudShopping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 777BDA9E1E910BC0002D0999;
+			productRefGroup = 777BDAA81E910BC0002D0999 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				777BDAA61E910BC0002D0999 /* CloudShopping */,
+				777BDAC21E910BC0002D0999 /* CloudShoppingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		777BDAA51E910BC0002D0999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777BDABD1E910BC0002D0999 /* LaunchScreen.storyboard in Resources */,
+				777BDABA1E910BC0002D0999 /* Assets.xcassets in Resources */,
+				777BDB2F1E92256D002D0999 /* CSPDdetailCollectionCell.xib in Resources */,
+				777BDAB51E910BC0002D0999 /* Main.storyboard in Resources */,
+				777BDB2D1E921CFA002D0999 /* CSPDlistCollectionCell.xib in Resources */,
+				777BDB1C1E91CF2B002D0999 /* CSPcatagoryList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777BDAC11E910BC0002D0999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41BC827669AACEAC1CD118D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudShopping/Pods-CloudShopping-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDC4C1A7554821F11C53EC3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E910464A160D3E371E2FC02D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudShopping/Pods-CloudShopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		777BDAA31E910BC0002D0999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777BDB251E91E6D8002D0999 /* CSPProductType.m in Sources */,
+				777BDAB21E910BC0002D0999 /* ViewController.m in Sources */,
+				777BDB021E9137F6002D0999 /* CSProductsController.m in Sources */,
+				777BDB3A1E9238C0002D0999 /* UITableView+RefreshControl.m in Sources */,
+				777BDB151E91BA26002D0999 /* CSPDlistLayout.m in Sources */,
+				777BDAF51E913370002D0999 /* CSRootTabBarController.m in Sources */,
+				777BDB281E921C2C002D0999 /* CSPDlistCollectionCell.m in Sources */,
+				777BDB221E91E5FB002D0999 /* CSPCIconViewCell.m in Sources */,
+				777BDAB81E910BC0002D0999 /* CloudShopping.xcdatamodeld in Sources */,
+				777BDB1F1E91E580002D0999 /* CSPCsingleCell.m in Sources */,
+				777BDB081E913868002D0999 /* CSMineViewController.m in Sources */,
+				777BDAAF1E910BC0002D0999 /* AppDelegate.m in Sources */,
+				777BDB3D1E928BFC002D0999 /* CSHomeTabHeader.m in Sources */,
+				777BDB0C1E91496C002D0999 /* CSPCatergoryListView.m in Sources */,
+				777BDB391E9238C0002D0999 /* PullUpLoadControl.m in Sources */,
+				777BDB381E9238C0002D0999 /* DownPullRefreshControl.m in Sources */,
+				777BDB181E91BA3F002D0999 /* CSPDdetailLayout.m in Sources */,
+				777BDB051E91384E002D0999 /* CSShopCartController.m in Sources */,
+				777BDB0F1E9149BF002D0999 /* CSPDetailListView.m in Sources */,
+				777BDB431E93C899002D0999 /* CSShapeHeaderRefresh.m in Sources */,
+				777BDAFC1E913778002D0999 /* CSHomeViewController.m in Sources */,
+				777BDAFF1E91379C002D0999 /* CSLatestViewController.m in Sources */,
+				777BDB121E914A39002D0999 /* CSPToolBarView.m in Sources */,
+				777BDB2B1E921C9A002D0999 /* CSPDdetailCollectionCell.m in Sources */,
+				777BDAF91E9134F8002D0999 /* CSBaseNavigationController.m in Sources */,
+				777BDAAC1E910BC0002D0999 /* main.m in Sources */,
+				777BDB401E9312CA002D0999 /* CSRefreshShapLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		777BDABF1E910BC0002D0999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777BDAC81E910BC0002D0999 /* CloudShoppingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		777BDAC51E910BC0002D0999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 777BDAA61E910BC0002D0999 /* CloudShopping */;
+			targetProxy = 777BDAC41E910BC0002D0999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		777BDAB31E910BC0002D0999 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				777BDAB41E910BC0002D0999 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		777BDABB1E910BC0002D0999 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				777BDABC1E910BC0002D0999 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		777BDACA1E910BC0002D0999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		777BDACB1E910BC0002D0999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		777BDACD1E910BC0002D0999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6B11C50EE324FEBC430D0D /* Pods-CloudShopping.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AZT38BP2GZ;
+				GCC_PREFIX_HEADER = CloudShopping/Others/PrefixHeader.pch;
+				INFOPLIST_FILE = CloudShopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hukun.CloudShopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		777BDACE1E910BC0002D0999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04CBC6ED00AEC88A4B8ACE5E /* Pods-CloudShopping.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AZT38BP2GZ;
+				GCC_PREFIX_HEADER = CloudShopping/Others/PrefixHeader.pch;
+				INFOPLIST_FILE = CloudShopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hukun.CloudShopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		777BDAD01E910BC0002D0999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AZT38BP2GZ;
+				INFOPLIST_FILE = CloudShoppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hukun.CloudShoppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudShopping.app/CloudShopping";
+			};
+			name = Debug;
+		};
+		777BDAD11E910BC0002D0999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AZT38BP2GZ;
+				INFOPLIST_FILE = CloudShoppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hukun.CloudShoppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CloudShopping.app/CloudShopping";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		777BDAA21E910BC0002D0999 /* Build configuration list for PBXProject "CloudShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777BDACA1E910BC0002D0999 /* Debug */,
+				777BDACB1E910BC0002D0999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		777BDACC1E910BC0002D0999 /* Build configuration list for PBXNativeTarget "CloudShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777BDACD1E910BC0002D0999 /* Debug */,
+				777BDACE1E910BC0002D0999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		777BDACF1E910BC0002D0999 /* Build configuration list for PBXNativeTarget "CloudShoppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777BDAD01E910BC0002D0999 /* Debug */,
+				777BDAD11E910BC0002D0999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		777BDAB61E910BC0002D0999 /* CloudShopping.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				777BDAB71E910BC0002D0999 /* CloudShopping.xcdatamodel */,
+			);
+			currentVersion = 777BDAB71E910BC0002D0999 /* CloudShopping.xcdatamodel */;
+			path = CloudShopping.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 777BDA9F1E910BC0002D0999 /* Project object */;
+}

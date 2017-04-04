@@ -1,0 +1,20 @@
+/*
+     项目初始化
+ */
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+/*************OC预定义**************/
+#ifdef __OBJC__
+#import <Masonry.h>
+#define DEVICESCREEN_BOUNDS [UIScreen mainScreen].bounds
+#define DEVICESCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+/*-----在发布阶段去除调试阶段输出------*/
+#ifdef DEBUG
+#define DBLog(fmt, ...) NSLog((@"%s 第[Line %d]行输出:" fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define DBLog(...)
+#endif
+/*-----在发布阶段去除调试log日志输出------*/
+#endif
+/*************OC预定义**************/
+#endif

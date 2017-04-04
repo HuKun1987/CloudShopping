@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="detailCollectionCellListStyleID" id="OZ4-Qn-DoX" customClass="CSPDlistCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rhw-zn-Ogt">
+                        <rect key="frame" x="10" y="10" width="67" height="67"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rhw-zn-Ogt" secondAttribute="height" id="wT2-zz-LyG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(第5763云)冈本(Okamoto)skin肤感至尊安全套10片/he" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COa-NR-xyg">
+                        <rect key="frame" x="87" y="10" width="236" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价值：¥116.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIZ-SU-SNs">
+                        <rect key="frame" x="87" y="46.5" width="68.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZbE-ey-ISV">
+                        <rect key="frame" x="87" y="63.5" width="189" height="2"/>
+                        <color key="progressTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </progressView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJA-0h-65x">
+                        <rect key="frame" x="286" y="46" width="37" height="37"/>
+                        <state key="normal" backgroundImage="search_shopping_cart"/>
+                        <state key="highlighted" backgroundImage="search_shopping_cart_selected"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sU2-YC-Ykz">
+                        <rect key="frame" x="10" y="86.5" width="323" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="jmb-Wa-fI7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rhw-zn-Ogt" firstAttribute="leading" secondItem="OZ4-Qn-DoX" secondAttribute="leading" constant="10" id="5bP-l7-IRN"/>
+                <constraint firstItem="hJA-0h-65x" firstAttribute="leading" secondItem="ZbE-ey-ISV" secondAttribute="trailing" constant="10" id="6AC-SW-k5c"/>
+                <constraint firstItem="oIZ-SU-SNs" firstAttribute="top" secondItem="COa-NR-xyg" secondAttribute="bottom" constant="10" id="ACz-E6-V8a"/>
+                <constraint firstItem="hJA-0h-65x" firstAttribute="centerY" secondItem="ZbE-ey-ISV" secondAttribute="centerY" id="ARv-Ih-6Ik"/>
+                <constraint firstItem="ZbE-ey-ISV" firstAttribute="leading" secondItem="oIZ-SU-SNs" secondAttribute="leading" id="DKQ-6R-TF1"/>
+                <constraint firstAttribute="trailing" secondItem="sU2-YC-Ykz" secondAttribute="trailing" id="EIt-cN-g78"/>
+                <constraint firstItem="sU2-YC-Ykz" firstAttribute="leading" secondItem="rhw-zn-Ogt" secondAttribute="leading" id="JVo-9D-3eZ"/>
+                <constraint firstAttribute="trailing" secondItem="COa-NR-xyg" secondAttribute="trailing" constant="10" id="QZ1-tQ-n7K"/>
+                <constraint firstItem="ZbE-ey-ISV" firstAttribute="top" secondItem="oIZ-SU-SNs" secondAttribute="bottom" constant="5" id="Vow-1e-jUl"/>
+                <constraint firstItem="COa-NR-xyg" firstAttribute="leading" secondItem="rhw-zn-Ogt" secondAttribute="trailing" constant="10" id="fCf-HV-79C"/>
+                <constraint firstItem="COa-NR-xyg" firstAttribute="top" secondItem="OZ4-Qn-DoX" secondAttribute="top" constant="10" id="hrS-n1-jps"/>
+                <constraint firstAttribute="trailing" secondItem="hJA-0h-65x" secondAttribute="trailing" constant="10" id="rqG-8H-Nx3"/>
+                <constraint firstAttribute="bottom" secondItem="rhw-zn-Ogt" secondAttribute="bottom" constant="10" id="szb-XI-H8N"/>
+                <constraint firstAttribute="bottom" secondItem="sU2-YC-Ykz" secondAttribute="bottom" id="u63-Xp-9Un"/>
+                <constraint firstItem="rhw-zn-Ogt" firstAttribute="top" secondItem="OZ4-Qn-DoX" secondAttribute="top" constant="10" id="usE-Ve-VrT"/>
+                <constraint firstItem="oIZ-SU-SNs" firstAttribute="leading" secondItem="COa-NR-xyg" secondAttribute="leading" id="yPo-r7-zEC"/>
+            </constraints>
+            <size key="customSize" width="333" height="54"/>
+            <point key="canvasLocation" x="-161.5" y="44.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="search_shopping_cart" width="37" height="37"/>
+        <image name="search_shopping_cart_selected" width="37" height="37"/>
+    </resources>
+</document>
