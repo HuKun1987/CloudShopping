@@ -33,13 +33,11 @@
 }
 
 - (void)setUPUI{
-    self.backgroundColor = [UIColor yellowColor];
     //  初始化刷新状态
     self.type = Normal;
     self.lastType = Normal;
 
 }
-
 - (void)add2TabHeaderView:(UIView *)tableHeaderView{
     CGRect frame = tableHeaderView.frame;
     self.frame = CGRectMake(0, -50, frame.size.width, 50);
@@ -76,18 +74,18 @@
 }
 //正常状态
 - (void)refreshStateNormalConfiguration{
-   
+   self.backgroundColor = [UIColor whiteColor];
 }
 //下拉状态
 - (void)refreshStatePullingConfiguration{
-
+    self.backgroundColor = [UIColor whiteColor];
 }
 //刷新状态
 - (void)refreshStateRefreshingConfiguration{
+   self.backgroundColor = [UIColor colorWithRed:219/255.0 green:219/255.0 blue:223/255.0 alpha:1];
     self.superScrollView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self endRefreshing];
-        self.superScrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     });
 }
 //结束刷新
@@ -95,6 +93,7 @@
     [self.shapeLayer endRefreshing];
     self.type = Normal;
     self.lastType = Normal;
+     self.superScrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
 }
 //  监听kvo方法
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context

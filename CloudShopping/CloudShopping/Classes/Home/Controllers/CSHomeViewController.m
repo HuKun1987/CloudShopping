@@ -7,13 +7,11 @@
 //
 
 #import "CSHomeViewController.h"
-#import "CSRefreshShapLayer.h"
+
 #import "CSHomeTabHeader.h"
-#import "CSShapeHeaderRefresh.h"
+
 @interface CSHomeViewController ()<UITableViewDelegate>
 @property(nonatomic,strong)UITableView   *homeTab;
-@property(nonatomic,strong)CSRefreshShapLayer  *shapeLayer;
-@property(nonatomic)CGPoint controlPoint;
 @end
 
 @implementation CSHomeViewController
@@ -44,8 +42,7 @@
     CSHomeTabHeader *headerView = [[CSHomeTabHeader alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 250)];
     headerView.backgroundColor = [UIColor redColor];
     self.homeTab.tableHeaderView = headerView;
-    CSShapeHeaderRefresh *refreshControl = [[CSShapeHeaderRefresh alloc]init];
-    [refreshControl add2TabHeaderView:self.homeTab.tableHeaderView];
+    
 }
 
 

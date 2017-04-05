@@ -7,7 +7,7 @@
 //
 
 #import "CSHomeTabHeader.h"
-
+#import "CSShapeHeaderRefresh.h"
 @interface CSHomeTabHeader ()
 //底部弧形视图
 @property(nonatomic,strong)CAShapeLayer   *bottomLayer;
@@ -17,11 +17,16 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
      
+       
         [self.layer addSublayer:self.bottomLayer];
     }
     return self;
 }
 
+- (void)didMoveToSuperview{
+    CSShapeHeaderRefresh *refreshControl = [[CSShapeHeaderRefresh alloc]init];
+    [refreshControl add2TabHeaderView:self];
+}
 
 - (CAShapeLayer *)bottomLayer{
 
