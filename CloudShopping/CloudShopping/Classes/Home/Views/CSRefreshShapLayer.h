@@ -8,8 +8,17 @@
 
 #import <QuartzCore/QuartzCore.h>
 
+//  当前刷新控件的刷新状态
+typedef enum : NSUInteger {
+    Normal,    // 下拉状态
+    Pulling,   //松手就刷新
+    Refreshing //正在刷新（开始动画）
+} RefreshState;
 @interface CSRefreshShapLayer : CAShapeLayer
-- (void)setCurrentScrollView:(UIScrollView *)currentScrollView;
-
+@property(nonatomic, assign) RefreshState type;
+- (void)updateShapeLayerWhenScrollView:(UIScrollView *)scrollView ChangeContentOffset:(CGFloat) offsetY;
+- (void)setAnimationImgViewWhenStateNormal;
+- (void)setAnimationImgViewWhenStateRefreshing;
+- (void)setAnimationImgViewWhenStatePulling;
 - (void)endRefreshing;
 @end
